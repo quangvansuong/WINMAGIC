@@ -1,0 +1,192 @@
+/* FOOTER WRAPPER */
+/* .footer {
+  background-color: var(--explore-3, #0d286a); 
+  color: var(--text-revert-1st, #f9fafb);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+} */
+
+/* .footer_inner {
+  width: 100%;
+} */
+
+/* TOP SECTION */
+
+/* .footer__top {
+  padding-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__top-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; 
+  margin-bottom: 1.875rem; 
+} */
+
+/* Mỗi cột (w-55.5 ~ 13.875rem, nhưng cho flex cho responsive) */
+/* .footer__column {
+  flex: 1 1 0;
+  min-width: 13rem;
+} */
+
+/* Section trong cột */
+/* .footer__section {
+  margin-bottom: 0;
+}
+
+.footer__section--spaced {
+  margin-top: 0.75rem; 
+} */
+
+/* Title: text-sm font-bold text-text-revert-1st mb-3 */
+/* .footer__section-title {
+  font-size: 0.875rem; 
+  font-weight: 700;
+  color: var(--text-revert-1st, #f9fafb);
+  margin-bottom: 0.75rem;
+} */
+
+/* List links */
+/* .footer__link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__link-item {
+  margin: 0.75rem 0; 
+} */
+
+/* text-[0.75rem] text-text-tertiary leading-6 */
+/* .footer__link {
+  font-size: 0.75rem;
+  line-height: 1.5rem; 
+  color: var(--text-tertiary, #9ca3af);
+  text-decoration: none;
+} */
+
+/* .footer__link:hover {
+  color: var(--text-cta, #38bdf8);
+} */
+
+/* DIVIDER: border-t border-stroke-invert opacity-10 */
+/* .footer__divider {
+  border-top: 1px solid var(--stroke-invert, #e5e7eb);
+  opacity: 0.1;
+} */
+
+/* BOTTOM SECTION */
+
+/* .footer__bottom {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.25rem;
+  padding-bottom: 2.5rem; 
+} */
+
+/* .footer__bottom-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.25rem;
+} */
+
+/* Brand left */
+/* .footer__brand {
+  max-width: 29.75rem; 
+}
+
+.footer__brand-top {
+  display: flex;
+  gap: 0.25rem; 
+} */
+
+/* Logo block (relative w-41.25 h-4.5) */
+/* .footer__logo-wrapper {
+  width: 10.3125rem; 
+  height: 1.125rem;
+  display: flex;
+  align-items: center;
+} */
+
+/* .footer__logo {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  object-fit: cover;
+} */
+
+/* Slogan: text-[0.6875rem] font-bold leading-1 mt-2.5 pb-0.75 */
+/* .footer__brand-slogan {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  line-height: 1; 
+  margin-top: 0.625rem; 
+  padding-bottom: 0.1875rem; 
+  color: var(--text-revert-1st, #f9fafb);
+}
+
+.footer__brand-link {
+  color: var(--text-cta, #76b92a);
+  margin-right: 0.125rem;
+  text-decoration: none;
+}
+
+.footer__brand-link:hover {
+  text-decoration: underline;
+} */
+
+/* Description: text-[0.625rem] mt-3 leading-[1.6] */
+/* .footer__brand-desc {
+  font-size: 0.625rem;
+  margin-top: 0.75rem;
+  line-height: 1.6;
+  color: var(--text-revert-1st, #f9fafb);
+} */
+
+/* Legal right side */
+/* .footer__legal {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: right;
+} */
+
+/* text-text-tertiary text-[0.625rem] text-end */
+/* .footer__legal-main {
+  font-size: 0.625rem;
+  color: var(--text-tertiary, #9ca3af);
+} */
+
+/* text-[0.5rem] mt-3 leading-[1.6] */
+/* .footer__legal-list {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  font-size: 0.5rem;
+  color: var(--text-tertiary, #9ca3af);
+  line-height: 1.6;
+}
+
+.footer__legal-item {
+  margin: 0;
+} */
+
+/* Responsive nhỏ hơn ~768px cho đẹp */
+
+/* @media (max-width: 768px) {
+  .footer__top-container {
+    flex-direction: column;
+  }
+
+  .footer__bottom-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__legal {
+    text-align: left;
+    align-items: flex-start;
+  }
+} */

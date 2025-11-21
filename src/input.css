@@ -1,0 +1,183 @@
+
+
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+}
+
+@font-face {
+  font-family: "Mona Sans";
+  src: url("/assets/fonts/MonaSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mona Sans";
+  src: url("/assets/fonts/MonaSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mona Sans";
+  src: url("/assets/fonts/MonaSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mona Sans";
+  src: url("/assets/fonts/MonaSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  /* --font-mona-sans: "Mona Sans", sans-serif; */
+  --font-mona-sans-medium: "Mona Sans", sans-serif;
+  --font-mona-sans-semibold: "Mona Sans";
+  --font-mona-sans-bold: "Mona Sans";
+  --color-priamry: #0b2039;
+  --color-second: #166147;
+  --color-third: #f1f5ff;
+  --color-btn1: #6eba1b;
+  --color-btn2: #edfbde;
+  --color-btn3: #6941c6;
+  --color-text-secondary: #4b5563;
+  --color-text-h1: #143661;
+  --color-text-cta: #76b92a;
+  --color-text-tertiary: #9ca3af;
+  --color-text-primary: #111928;
+  --color-text-revert-1st: #ffffff;
+  --color-text-revert-2nd: #a8b3d1;
+  --color-stroke-default: #e5e7eb;
+  --color-stroke-invert: #ffffff;
+  /* --color-text-tertiary: #9ca3af; */
+  --color-explore-2: #0276ff;
+  --color-brand-3: #edfbde;
+  --color-dark: #0b2039;
+  --color-B-bg-secondary:#D5E0F9;
+  --color-brand-0: #1a3159;
+  --color-bg-placeholder: #f9fafb;
+  --color-bg-section1: #f1f5ff;
+  --color-explore-3: #0d286a;
+}
+
+@layer utilities {
+  .container-header {
+    width: 100%;
+    /* max-width: 78.75rem; */
+  }
+  @media (min-width: 90.1875rem) {
+    .container-header {
+      width: 100%;
+      max-width: 78.75rem;
+    }
+  }
+
+  .container-nav {
+    width: 100%;
+    width: clamp(64rem, 100%, 78.75rem); /* 78.75rem = 1260px */
+  }
+  @media (min-width: 90.1875rem) {
+    .container-nav {
+      width: 100%;
+      max-width: 78.75rem;
+    }
+  }
+  .container-banner {
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media (min-width: 90.1875rem) {
+    /* 1443px */
+    .container-banner {
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  .container-whycisos {
+    width: 100%;
+    max-width: 49.75rem;
+    /* min-width: 90rem; */
+  }
+  @media (min-width: 90.1875rem) {
+    .container-whycisos {
+      width: 100%;
+      max-width: 49.75rem;
+    }
+  }
+  .container {
+    width: 100%;
+    max-width: 60rem;
+  }
+  @media (min-width: 90.1875rem) {
+    .container-content {
+      width: 100%;
+      max-width: 60rem;
+    }
+  }
+  .container-content {
+    width: 100%;
+    max-width: 45.8125rem;
+  }
+  @media (min-width: 90.1875rem) {
+    .container-content {
+      width: 100%;
+      max-width: 45.8125rem;
+    }
+  }
+}
+
+
+ /* Key management scan animation */
+.scan-wrapper {
+    width: 6.25rem;
+    height: 6.25rem;
+}
+.scan-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    
+    border: 3px solid rgba(36, 132, 247, 0.1);
+    box-shadow: 0 0 20px #00d2ff44, inset 0 0 25px #00caff22;
+}
+.fingerprint {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    opacity: 0.18;
+    filter: brightness(1.8);
+}
+/* Tia scan */
+.scanner-line {
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(
+      to bottom,
+      #0070F5 0%,
+      #0070F50D 50%,
+      #0070f500 100%
+  );
+    animation: scanMove 1.5s linear infinite;
+}
+@keyframes scanMove {
+    0% { bottom: -50%; }
+    100% { bottom: 60%; }
+}
+body {
+  color: var(--foreground);
+  font-family: Mona Sans;
+
+}
